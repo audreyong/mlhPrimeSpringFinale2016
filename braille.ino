@@ -373,12 +373,12 @@ void braillePrint(char letter) {
     exclamationPoint();
     Serial.print(letter);
   }
-  else if (letter == '"' && !quoteCount) {
+  else if (letter == '"' && quoteCount == 0) {
     openQuote();
     quoteCount = 1;
     Serial.print(letter);
   }
-  else if (letter == '"' && quoteCount) {
+  else if (letter == '"' && quoteCount == 1) {
     closeQuote();
     quoteCount = 0;
     Serial.print(letter);
