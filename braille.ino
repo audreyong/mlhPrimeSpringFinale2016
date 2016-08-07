@@ -353,7 +353,7 @@ void braillePrint(char letter) {
     semicolon();
     Serial.print(letter);
   }
-  else if (letter == "'") {
+  else if (letter == '\'') {
     apostrophe();
     Serial.print(letter);    
   }
