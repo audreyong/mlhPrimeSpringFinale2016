@@ -4,7 +4,7 @@ int pin3 = 3;
 int pin4 = 4;
 int pin5 = 5;
 int pin6 = 6;
-String testText = ",;':-.!""(/";
+String testText = ",;':-.!\"\"(/";
 int quoteCount = 0;
 
 void setup() {
